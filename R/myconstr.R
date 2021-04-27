@@ -19,4 +19,3 @@ myconstr = function(x,y){
   class(obj) = "constr"
   obj
 }
-print("hello")
