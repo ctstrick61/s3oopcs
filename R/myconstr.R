@@ -1,5 +1,10 @@
 #' This is my constructor function
 #'
+#'
+#'This function will create a list output
+#'
+#'The constructor makes an object filled with valuable material
+#'Need to be more specific here.
 #' @param x
 #' @param y
 #'
