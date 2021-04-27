@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Christopher Strickland 
 Maintainer: Christopher Strickland <Christopher.T.Strickland-1@ou.edu>
 Description: Introduction to s3 oop in Advanced R.
-License: MIT
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/ctstrick61/s3oopcs
