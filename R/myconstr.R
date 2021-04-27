@@ -5,13 +5,14 @@
 #'
 #'The constructor makes an object filled with valuable material
 #'Need to be more specific here.
-#' @param x
-#' @param y
+#' @param x vector of independent variable
+#' @param y vector of dependent variable
 #'
-#' @return
+#' @return list of data and lm objects
 #' @export
 #'
 #' @examples
+#' myconstr(x,y)
 myconstr = function(x,y){
   ylm = lm(y~x)
   obj = list(data = list(x = x, y = y), ylm = ylm)
