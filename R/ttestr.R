@@ -1,0 +1,17 @@
+set.seed(32); x=rnorm(30,mean=10,sd=15)
+set.seed(35); y=rnorm(30,mean=8,sd=15)
+ans1=ADVTTEST::myttest(x,y,alpha=0.05,paired=FALSE)
+print(ans1)
+plot(ans1)
+
+set.seed(32); x=rnorm(30,mean=10,sd=5)
+set.seed(35); y=rnorm(30,mean=8,sd=15)
+ans2=ADVTTEST::myttest(x,y,alpha=0.05,paired=FALSE)
+print(ans2)
+plot(ans2)
+
+set.seed(32); x=rnorm(30,mean=10,sd=15)
+set.seed(35); y = x+ rnorm(30, 5 ,4)
+ans3=ADVTTEST::myttest(x,y,alpha=0.05,paired=TRUE)
+print(ans3)
+plot(ans3)
