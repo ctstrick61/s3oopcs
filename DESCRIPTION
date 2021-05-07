@@ -11,3 +11,4 @@ LazyData: true
 URL: https://github.com/ctstrick61/s3oopcs
 BugReports: https://github.com/ctstrick61/s3oopcs/issues
 RoxygenNote: 7.1.1
+Imports: shiny
