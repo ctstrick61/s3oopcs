@@ -25,14 +25,17 @@
 #' @examples
 #' l<-myttest(x=rnorm(30), y=rnorm(40,0.5));plot(l)
 plot.mytt <- function(x, ...){
-  df<-x$df
-  g<-ggplot(df, aes(x=v,y=data)) + geom_boxplot(aes(fill=v))
-  g<-g + ggtitle(paste(
-    "P value =",
-    round(x$ttest$p.value,4),
-    "Paired = ",
-    x$paired
-  )
-  )
-  print(g)
+  df<-x$df %>%
+    g <- df %>% ggplot(aes(x=v,y=data))
+    g + geom_boxplot(aes(fill=v))
+    #add options
+    g<-g + ggtitle(paste(
+      "P value =",
+      round(x$ttest$p.value,4),
+      "Paired = ",
+      x$paired
+    )
+    )
+    print(g)
 }
+
