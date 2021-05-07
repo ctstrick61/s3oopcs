@@ -224,7 +224,7 @@ mynewf3<-function(x, y, Var.equal= True, paired= True){
 
 
 
-#' @title A constructor function for t tests
+#' @title A constructor function that uses map function in Purrr for the t tests
 #'
 #' @description   This is an example of what can be done with S3 OOP
 #'
