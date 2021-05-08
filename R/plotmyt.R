@@ -6,7 +6,7 @@
 #'
 #' @param x object class mytt
 #'
-#' @param ... extra options to be sent to method
+#'
 #'
 #' @return  A boxplot of the two samples using \code{ggplot()}
 #'

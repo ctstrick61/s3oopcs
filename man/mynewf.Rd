@@ -11,7 +11,9 @@ mynewf(x, y, Var.equal = True, paired = True)
 
 \item{y}{vector of data}
 
-\item{paired}{}
+\item{Var.equal}{TRUE or FALSE, FALSE by default}
+
+\item{paired}{TRUE or FALSE, FALSE by default}
 }
 \value{
 

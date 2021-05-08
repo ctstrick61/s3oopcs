@@ -71,8 +71,8 @@ myttest<-function(x,y, paired=FALSE, alpha=0.05){
 #' @details detail structure of data
 #' @param x vector of data
 #' @param y vector of data
-#' @param Var.equal
-#' @param paired
+#' @param Var.equal  TRUE or FALSE, FALSE by default
+#' @param paired TRUE or FALSE, FALSE by default
 #'
 #' @return
 #' @export

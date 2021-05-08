@@ -8,8 +8,6 @@
 }
 \arguments{
 \item{x}{object class mytt}
-
-\item{...}{extra options to be sent to method}
 }
 \value{
 A boxplot of the two samples using \code{ggplot()}
