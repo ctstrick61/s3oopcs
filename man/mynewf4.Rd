@@ -2,7 +2,7 @@
 % Please edit documentation in R/myttest.R
 \name{mynewf4}
 \alias{mynewf4}
-\title{A constructor function for t tests}
+\title{A constructor function that uses map function in Purrr for the t tests}
 \usage{
 mynewf4(x, y, paired = FALSE, alpha = 0.05)
 }

@@ -8,14 +8,15 @@
 #
 
 library(shiny)
+library(s3oopcs)
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
 
     # Application title
-    titlePanel("Old Faithful Geyser Data"),
+    titlePanel("Random Data for Project"),
 
-    # Sidebar with a slider input for number of bins 
+    # Sidebar with a slider input for number of bins
     sidebarLayout(
         sidebarPanel(
             sliderInput("bins",
@@ -27,23 +28,26 @@ ui <- fluidPage(
 
         # Show a plot of the generated distribution
         mainPanel(
-           plotOutput("distPlot")
+           plotOutput("plotmyt")
         )
     )
 )
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
+    datasetInput <- reactive({
+        switch(input$plotmyt)
+    })
 
-    output$distPlot <- renderPlot({
+    output$plotmyt <- renderPlot({
         # generate bins based on input$bins from ui.R
         x    <- faithful[, 2]
         bins <- seq(min(x), max(x), length.out = input$bins + 1)
 
         # draw the histogram with the specified number of bins
-        hist(x, breaks = bins, col = 'darkgray', border = 'white')
+        boxplot(x,...)
     })
 }
 
-# Run the application 
+# Run the application
 shinyApp(ui = ui, server = server)
